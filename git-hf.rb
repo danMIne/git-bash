@@ -16,7 +16,6 @@ OUTER_ESB_PREFIX = "v-ext."
 WEBAPI_PREFIX = "v-wp."
 
 def get_tags
-  repo_url = "git@gitlab.beisencorp.com:pps/Beisen.CoreHrV5.git"
   tags_ori = `git ls-remote -t --refs`
   tags = tags_ori.split("\n")
   tags.each do |tag|
